@@ -1,0 +1,9 @@
+s='bobob'
+
+low_string = s.lower()
+bob_count = 0
+counter = 0
+
+for char in low_string:
+    if char == 'b'
+    compar_str = low_string(counter:counter+3)
