@@ -1,0 +1,16 @@
+def ndigits(integer):
+    '''
+    Given an integer, it calculates finds out how many digits
+the integer have.
+'''
+    assert integer%1 == 0 #Confirms it is integer
+    digits = 0
+    if int(integer/10) = 0:
+        return 1
+    else:
+        integer = int(integer/10)
+        return 1+ndigits(integer)
+    
+
+        
+    

@@ -1,0 +1,6 @@
+def f(a,b):
+    return (a+b)
+
+def dict_interdiff(d1,d2):
+    inter = {}
+    diff = [}

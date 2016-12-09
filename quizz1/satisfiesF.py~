@@ -1,0 +1,5 @@
+def f(a):
+    return (a in 'aeiou')
+
+def satisfiesF(L):
+    

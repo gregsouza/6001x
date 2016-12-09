@@ -1,0 +1,8 @@
+def polysum(n,s):
+    from math import * #importing functions from math
+    
+    poly_area = 0.25*n*s*s/tan(n/s)
+    print(str(tan(n/s))
+    poly_perimiter =n*s
+    answer = poly_area + poly_perimiter**2
+    return answer

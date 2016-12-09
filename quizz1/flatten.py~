@@ -1,0 +1,17 @@
+def flatten(aList):
+    isThereList = False
+    wichElement = 0
+    newList = []
+    for element in aList:
+        if type(element) == list:
+            elementSize = len(element)
+            for thing in element:
+                newList = newList.append(thing)
+                if type(thing) == list:
+                    isThereList = True
+        wichElement += 1
+
+    if isThereList == True:
+        return flatten(newList)
+    else:
+        return newList

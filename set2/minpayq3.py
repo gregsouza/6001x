@@ -11,12 +11,14 @@ def debt_year(balance, annualInterestRate, month_pay):
 
 balance = 999999
 annualInterestRate = 0.18
-
+iter = 0
 low = 0.0
 high = balance/2.0
 guess = (low+high)/2.0
 debt = debt_year(balance, annualInterestRate, guess)
-while abs(debt) > 0.001:
+epsolon = 0.00000001
+while abs(debt) > epsolon:
+    iter+=1
     debt = debt_year(balance, annualInterestRate, guess)
     if debt>0:
         low = guess
@@ -27,3 +29,4 @@ while abs(debt) > 0.001:
     guess = (high+low)/2.0
     #end
 print('Lowest Payment Rate: ' + str(round(guess,2)))
+print('With Epsolon =' + str(epsolon) + ' we have #'+str(iter)+' iterations')
